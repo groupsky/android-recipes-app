@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="eu.masconsult.template.recipes"
+    android:versionCode="2"
+    android:versionName="1.0.1" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name="eu.masconsult.template.recipes.RecipesApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="eu.masconsult.template.recipes.ui.SplashActivity"
+            android:theme="@style/AppTheme.Splash" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Content provider -->
+        <provider
+            android:name="eu.masconsult.template.recipes.content.RecipesDBContentProvider"
+            android:authorities="@string/recipes_content_authority"
+            android:exported="false" />
+
+        <!-- Seatch suggestions content provider -->
+
+        <provider
+            android:name="eu.masconsult.template.recipes.content.SearchRecipeSuggestionsProvider"
+            android:authorities="@string/search_suggestions_authority"
+            android:exported="false" />
+
+        <!-- Data import service -->
+        <service
+            android:name="eu.masconsult.template.recipes.ops.RecipesService"
+            android:exported="false" />
+
+        <activity
+            android:name="eu.masconsult.template.recipes.ui.RecipeItemListActivity"
+            android:launchMode="singleTop" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+            <meta-data
+                android:name="android.app.default_searchable"
+                android:value="eu.masconsult.template.recipes.ui.RecipeItemListActivity" />
+        </activity>
+        <activity
+            android:name="eu.masconsult.template.recipes.ui.RecipeItemDetailActivity"
+            android:label="@string/title_recipeitem_detail"
+            android:parentActivityName="eu.masconsult.template.recipes.ui.RecipeItemListActivityity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="eu.masconsult.template.recipes.ui.RecipeItemListActivity" />
+        </activity>
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+
+        <service
+            android:name="eu.masconsult.template.recipes.service.NotificationService"
+            android:exported="false" />
+
+        <!-- Used for install referral measurement -->
+        <service android:name="com.google.analytics.tracking.android.CampaignTrackingService" />
+
+        <receiver
+            android:name="com.google.analytics.tracking.android.CampaignTrackingReceiver"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

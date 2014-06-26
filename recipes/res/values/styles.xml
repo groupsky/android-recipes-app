@@ -1,0 +1,76 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="@style/Recipes">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+
+        <item name="android:actionBarStyle" tools:ignore="NewApi">@style/RecipesActionBar</item>
+        <!-- Support library compatibility -->
+        <item name="actionBarStyle">@style/RecipesActionBar</item>
+        <item name="android:actionBarItemBackground" tools:ignore="NewApi">@drawable/recipes_ab_button_style</item>
+        <item name="actionBarItemBackground">@drawable/recipes_ab_button_style</item>
+        <item name="android:actionDropDownStyle" tools:ignore="NewApi">@style/RecipesActionBarDropDown</item>
+        <item name="actionDropDownStyle">@style/RecipesActionBarDropDown</item>
+    </style>
+
+    <style name="AppTheme.Splash" parent="@android:style/Theme.NoTitleBar">
+        <item name="android:windowBackground">@color/recipes_color</item>
+        <item name="android:colorBackground">@color/recipes_color</item>
+    </style>
+
+    <!-- ActionBar styles -->
+    <style name="RecipesActionBar" parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@color/recipes_color</item>
+
+        <!-- Support library compatibility -->
+        <item name="background">@color/recipes_color</item>
+    </style>
+
+    <style name="RecipeNameTextView">
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:paddingLeft">@dimen/horizontal_inner_padding</item>
+        <item name="android:paddingTop">@dimen/vertical_inner_padding</item>
+    </style>
+
+    <style name="ContentGroupContainer">
+        <item name="android:paddingLeft">@dimen/horizontal_padding</item>
+        <item name="android:paddingRight">@dimen/horizontal_padding</item>
+        <item name="android:paddingBottom">@dimen/vertical_padding</item>
+    </style>
+
+    <style name="ContentGroupTitle">
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="ContentGroupContent">
+        <item name="android:paddingTop">@dimen/vertical_inner_padding</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+    </style>
+
+    <style name="RecipesSpinnerStyle">
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center|left</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <style name="RecipesActionBarDropDown" parent="@style/Widget.AppCompat.Spinner.DropDown.ActionBar">
+        <item name="android:background">@drawable/recipes_ab_spinner</item>
+    </style>
+
+</resources>

@@ -1,0 +1,5 @@
+package eu.masconsult.template.recipes.ops
+
+service RecipesService {
+	operation importRecipes(String file, boolean local)
+}

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+    <string name="app_name">Recipes</string>
+    <string name="title_recipeitem_list">RecipeItems</string>
+    <string name="title_recipeitem_detail">RecipeItem Detail</string>
+    <string name="preparation_time">Prep:</string>
+    <string name="cook_time">Cook:</string>
+    <string name="min">min.</string>
+    <string name="summary">Summary</string>
+    <string name="ingredients">Ingredients</string>
+    <string name="directions">Directions</string>
+    <string name="search">Search</string>
+    <string name="search_recipe">Search Recipe</string>
+    <string name="prep">PREP</string>
+    <string name="cook">COOK</string>
+    <string name="total">TOTAL</string>
+    <string name="serves">SERVES</string>
+    <string name="no_results">No Results</string>
+    <string name="no_data">No Data</string>
+    <string name="search_recipies">Search Recipies</string>
+    <string name="all_recipes">All Recipes</string>
+    <string name="favorites">Favorites</string>
+    <string name="add_to_favorites">Add to Favorites</string>
+    <string name="select_recipe_from_the_list">Select recipe from the list</string>
+    <string name="share">Share</string>
+    <string name="share_via">Share via</string>
+
+</resources>

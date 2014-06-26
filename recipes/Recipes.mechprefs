@@ -1,0 +1,9 @@
+package eu.masconsult.template.recipes.prefs
+
+preferences Recipes {
+	
+	firstLaunchTimestamp: long = 0
+	nextUpdateUrl: String
+	lastSucceedUpdateUrl: String
+	
+}

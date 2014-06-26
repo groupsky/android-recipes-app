@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/recipeitem_detail_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:overScrollMode="never" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/recipe_image"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/recipe_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/recipe_name_padding"
+                android:text="Manja name goes here"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/recipe_prep_time_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:src="@drawable/icon_watch" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/prep"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#99333333"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/recipe_prep_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="10 min."
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#333333" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/recipe_cook_time_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:src="@drawable/icon_watch" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/cook"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#99333333"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/recipe_cook_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="15 min."
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#333333" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/recipe_total_time_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:src="@drawable/icon_clock" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/total"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#99333333"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/recipe_total_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="25 min."
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#333333" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/recipe_servings_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:src="@drawable/icon_person" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/serves"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#99333333"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/recipe_serves"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="4"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#333333" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="@dimen/vertical_padding"
+                android:layout_marginLeft="@dimen/horizontal_padding"
+                android:layout_marginRight="@dimen/horizontal_padding"
+                android:layout_marginTop="@dimen/vertical_padding"
+                android:background="#99333333" />
+
+            <LinearLayout
+                android:id="@+id/recipe_summary_layout"
+                style="@style/ContentGroupContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/ContentGroupTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/summary" />
+
+                <TextView
+                    android:id="@+id/recipe_summary"
+                    style="@style/ContentGroupContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="summary text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/recipe_ingredients_layout"
+                style="@style/ContentGroupContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/ContentGroupTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ingredients" />
+
+                <TextView
+                    android:id="@+id/recipe_ingredients"
+                    style="@style/ContentGroupContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ingredients text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/recipe_directions_layout"
+                style="@style/ContentGroupContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/ContentGroupTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/directions" />
+
+                <TextView
+                    android:id="@+id/recipe_directions"
+                    style="@style/ContentGroupContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="directions text" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

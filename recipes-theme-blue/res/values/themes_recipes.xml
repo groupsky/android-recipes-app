@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Generated with http://android-holo-colors.com -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <style name="Recipes" parent="@style/_Recipes"/>
+
+  <style name="_Recipes" parent="Theme.AppCompat.Light.DarkActionBar">
+
+    <item name="android:editTextStyle">@style/EditTextRecipes</item>
+
+    <item name="android:textColorHighlight">#990099cc</item>
+
+    <item name="android:autoCompleteTextViewStyle">@style/AutoCompleteTextViewRecipes</item>
+
+    <item name="android:checkboxStyle">@style/CheckBoxRecipes</item>
+
+    <item name="android:radioButtonStyle">@style/RadioButtonRecipes</item>
+
+    <item name="android:buttonStyle">@style/ButtonRecipes</item>
+
+    <item name="android:imageButtonStyle">@style/ImageButtonRecipes</item>
+
+    <item name="android:spinnerStyle">@style/SpinnerRecipes</item>
+
+    <item name="android:spinnerDropDownItemStyle">@style/SpinnerDropDownItemRecipes</item>
+
+    <item name="android:progressBarStyleHorizontal">@style/ProgressBarRecipes</item>
+
+    <item name="android:seekBarStyle">@style/SeekBarRecipes</item>
+
+    <item name="android:ratingBarStyle">@style/RatingBarRecipes</item>
+
+    <item name="android:ratingBarStyleIndicator">@style/RatingBarBigRecipes</item>
+
+    <item name="android:ratingBarStyleSmall">@style/RatingBarSmallRecipes</item>
+
+    <item name="android:buttonStyleToggle">@style/ToggleRecipes</item>
+
+    <item name="android:listViewStyle">@style/ListViewRecipes</item>
+
+    <item name="android:listViewWhiteStyle">@style/ListViewRecipes.White</item>
+
+    <item name="android:spinnerItemStyle">@style/SpinnerItemRecipes</item>
+
+  </style>
+
+</resources>

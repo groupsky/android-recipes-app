@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:orientation="horizontal"
+    android:showDividers="middle"
+    tools:context=".RecipeItemListActivity" >
+
+    <!--
+    This layout is a two-pane layout for the RecipeItems
+    master/detail flow. See res/values-large/refs.xml and
+    res/values-sw600dp/refs.xml for an example of layout aliases
+    that replace the single-pane version of the layout with
+    this two-pane version.
+
+    For more on layout aliases, see:
+    http://developer.android.com/training/multiscreen/screensizes.html#TaskUseAliasFilters
+    -->
+
+    <fragment
+        android:id="@+id/recipeitem_list"
+        android:name="eu.masconsult.template.recipes.fragment.RecipeItemListFragment"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        tools:layout="@android:layout/list_content" />
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2" >
+
+        <FrameLayout
+            android:id="@+id/recipeitem_detail_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/detail_empty_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/select_recipe_from_the_list" />
+        </FrameLayout>
+
+        <View
+            android:layout_width="6dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/drawer_shadow" />
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,6 @@
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/text1"
+    android:singleLine="true"
+    android:layout_height="@dimen/drop_down_height"
+    style="@style/RecipesSpinnerStyle"
+    android:textSize="16sp"/>

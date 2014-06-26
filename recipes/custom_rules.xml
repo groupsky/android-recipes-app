@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated on 2014-01-21 using generator-android 0.1.0 -->
+<project name="custom-rules">
+
+  <!-- ******************************************************* -->
+  <!-- ******************* Other Properties ****************** -->
+  <!-- ******************************************************* -->
+
+  <property environment="jenkins-env"/>
+
+  <!-- ******************************************************* -->
+  <!-- ***************** Overriden targets ******************* -->
+  <!-- ******************************************************* -->
+
+  <target name="-pre-build" depends="-update-manifest-version" />
+
+  <target name="-post-build" depends="-rename-output-file" />
+
+  <!-- ******************************************************* -->
+  <!-- ***************** Build enhanchment targets *********** -->
+  <!-- ******************************************************* -->
+
+  <target name="-update-manifest-version" if="jenkins-env.BUILD_NUMBER">
+    <echo>Updating version name and code in AndroidManifest.xml</echo>
+    <replaceregexp file="AndroidManifest.xml" match="android:versionName=&quot;(.*)-SNAPSHOT&quot;" replace="android:versionName=&quot;\1.${jenkins-env.BUILD_NUMBER}&quot;"/>
+    <replaceregexp file="AndroidManifest.xml" match="android:versionCode=&quot;.*&quot;" replace="android:versionCode=&quot;${jenkins-env.BUILD_NUMBER}&quot;"/>
+  </target>
+
+  <target name="-retrieve-project-version" depends="-update-manifest-version">
+    <xpath input="AndroidManifest.xml" expression="/manifest/@android:versionName" output="manifest.version" />
+    <echo>Project version: ${manifest.version}</echo>
+  </target>
+
+  <target name="-rename-output-file" depends="-retrieve-project-version" if="jenkins-env.BUILD_NUMBER">
+    <pathconvert property="out.final2.file">
+     <path path="${out.final.file}"/>
+     <mapper>
+      <globmapper from="*.apk" to="*-${manifest.version}.apk" casesensitive="no"/>
+    </mapper>
+  </pathconvert>
+  <echo>Final Package: ${out.final2.file}</echo>
+  <move file="${out.final.file}" tofile="${out.final2.file}" />
+</target>
+
+</project>

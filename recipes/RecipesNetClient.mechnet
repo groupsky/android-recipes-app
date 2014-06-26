@@ -1,0 +1,26 @@
+package eu.masconsult.template.recipes.net
+
+entity Recipe {
+	id: String,
+	category:String,
+	name:String,
+	image:String,
+	summary:String,
+	directions:String,
+	prep_time:int,
+	cook_time:int,
+	total_time:int,
+	serves:int,
+	ingredients:String[]
+}
+
+client RecipesNetClient {
+	get getRecipes {
+		response {
+			recipes:Recipe[],
+			next_page: String,
+			next_update: String
+		}
+
+	}
+}

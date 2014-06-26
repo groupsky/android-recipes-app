@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="recipe_name_padding">16dp</dimen>
+	<dimen name="vertical_padding">16dp</dimen>
+	<dimen name="horizontal_padding">16dp</dimen>
+	<dimen name="vertical_inner_padding">8dp</dimen>
+	<dimen name="horizontal_inner_padding">8dp</dimen>
+    
+	<dimen name="drop_down_height">48dp</dimen>
+</resources>

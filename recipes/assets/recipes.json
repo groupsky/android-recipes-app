@@ -1,0 +1,133 @@
+{
+	"recipes": [
+    {
+    	"id": 1,
+        "category": "Dinner",
+        "name": "Creamy Ham Casserole",
+        "image": "ham-casserole-3.jpg",
+        "summary": "This casserole has everything going for it. The cheese and mushroom soup blend into a perfect creaminess, while the fresh vegetables are cooked just long enough to still have that satisfying crunch.",
+        "directions": "1. Cook noodles in 2 quarts boiling water for 2 minutes. Add broccoli and carrots and cook 3 minutes more. Drain immediately. You do not want to over cook your noodles, otherwise you will end up with a soggy casserole.\n2. Combine milk, soup, cheddar cheese, and cream cheese in a large bowl; mix well with a whisk. Add noodle mixture and ham and stir well.\n3. Divide noodle mixture evenly between a 9×13 baking dish that has been coated with olive oil (or Pam). Sprinkle the bread crumbs (or Panko) evenly over casserole.At this point you can choose to freeze the casserole to eat at a later date or you may cook it immediately:\n4. To freeze: Wrap unbaked Casserole with heavy duty foil. Freeze up to 3 months. When ready to eat, remove casserole from freezer and let rest on the counter for 30 minutes (this ensures your baking dish will not crack while baking from the heat). Then bake, covered, at 350 degrees, for 1 hour. Uncover and bake an additional 15 minutes, or until topping is lightly browned.\n5. To bake immediately: Cover casserole with foil and bake at 350 degrees for 30 minutes. Uncover and bake an additional 10 minutes, or until topping is lightly browned.",
+        "prep_time": 10,
+        "cook_time": 40,
+        "serves": 8,
+        "ingredients": [
+            "4 1/2 cups uncooked whole wheat egg noodles",
+            "2 quarts boiling water",
+            "2 cups broccoli florets",
+            "1 cup chopped carrot",
+            "1 cup fat free milk",
+            "1 10oz can cream of mushroom soup",
+            "2 cups (8 oz) reduced-fat shredded cheddar cheese",
+            "1 (6 oz) tub light cream cheese with chives and onions, softened",
+            "2 cups chopped lean ham (we used a half pound of thick sliced deli ham)",
+            "1/2 cup bread crumbs (we used Panko)"
+        ]
+    },
+    {
+    	"id": "eggrolls",
+    	"category": "Appetizer",
+    	"name": "Southwestern Eggrolls",
+    	"image": "Southwestern Eggrolls.jpg",
+    	"summary": "These Knockoff Chili's Southwestern Egg Rolls are a great way to start off any meal. With some dipping sauce, these crispy snacks would make a perfect party appetizer.",
+    	"directions": "Heat a skillet over medium heat with one tablespoon of oil. When hot, add the scallions and minced garlic and cook 2 to 3 minutes or until the scallions are soft. Add the cumin, chili powder, and cayenne (if using) and stir to combine. Cook one minute longer then scrape the mixture into a food processor.\n\nTo the scallion mixture in the food processor, add the drained and rinsed black beans, chicken breast, spinach, water, salt, and some pepper. Pulse a few times until the mixture is roughly chopped. Set aside.\n\nWipe out the skillet you cooked the scallions in, add a little more oil, and set the pan over medium heat. Cook the corn and red bell pepper for a couple of minutes then dump in the bean mixture from the food processor. Stir to combine and taste for seasoning. The mixture should be thick but if it seems rather dry, add another tablespoon or two of water. I usually end up adding more cumin and chili powder (and sometimes a little more salt) because I like my filling to have a rather robust flavor. Take the pan off the heat and let the mixture cool for a few minutes. After the mixture has cooled, add the pepper jack cheese and stir to combine.\n\nWarm the tortillas per the package instructions. Spoon the filling into a 1/3 measuring cup and gently pack the filling. Dump the filling onto a warm tortilla and mold the filling slightly into an oblong shape. Fold in the sides and roll it up as if you were rolling a burrito. Insert a toothpick to keep the eggroll closed. Repeat until you have used up all of the filling.\n\nBegin heating about 3\" of oil (peanut oil works great) in a deep sauce pan. Begin preheating the oven to 200F. Insert a wire rack into a sheet pan and set aside.\n\nOnce the oil reaches 350F, add 2 or 3 eggrolls (depending on the size of your pan) and fry for about 5 minutes – turning often. The eggrolls are done when the outside is brown and crispy. Transfer the eggrolls to the rack in the sheet pan and place in the oven to keep warm while you are frying the rest of the eggrolls. When finished, serve with your favorite dipping sauce.",
+    	"serves": 4,
+        "prep_time": 15,
+        "cook_time": 30,
+    	"ingredients": [
+    		"1 TBSP oil",
+    		"1 1/2 bunches scallions, finely chopped",
+    		"4 cloves garlic, minced",
+    		"1 tsp cumin",
+    		"1 tsp chili powder",
+    		"Pinch of cayenne (optional)",
+    		"1 15 oz can black beans, drained and rinsed",
+    		"3/4 of a cooked chicken breast, roughly chopped",
+    		"3 TBSP heated frozen spinach, drained",
+    		"1 small handful of fresh cilantro",
+    		"1/4 c water (or more, if needed)",
+    		"1 tsp kosher salt (1/2 tsp table salt)",
+    		"Black pepper to taste",
+    		"2 TBSP frozen corn",
+    		"2 TBSP red bell pepper",
+    		"2 c pepper jack cheese, freshly grated",
+    		"8 7\" flour tortillas",
+    		"Oil for frying"
+    	]
+    },
+	{
+	    "category": "Dinner",
+	    "name": "Cheeseburger Soup",
+	    "image": "http://thekeenancookbook.com/wp-content/uploads/2013/02/00-Cheeseburger-Soup-Banner.jpg",
+	    "directions": "Brown the ground beef in 3 quart saucepan. Drain and set aside. In the same saucepan add chopped onion, shredded carrots, dried basil, dried parsley, and celery. Saute until tender. Add the broth, potatoes and beef and bring to a boil. Reduce heat, cover and simmer 10-12 minutes or until potatoes are tender. In small skillet melt butter and add the flour. Cook and stir for 3-5 minutes or until bubbly. Add to the soup and bring to a boil. Cook and stir for 2 minutes and reduce heat to low. Stir in the Velveeta cheese, milk, salt and pepper. Cook and stir until cheese melts. Remove from heat and blend in sour cream. Top with shredded cheddar if desired.",
+    	"serves": 4,
+        "prep_time": 15,
+        "cook_time": 30,
+	    "ingredients": [
+	        "1 lb ground beef (ground turkey meat also works well)",
+	        "3/4 cup chopped onion",
+	        "3/4 cup shredded carrots",
+	        "3/4 cup diced celery",
+	        "1 teaspoon dried basil",
+	        "1 teaspoon dried parsley flakes",
+	        "1 tablespoons butter",
+	        "3 cups chicken broth",
+	        "4 cups peeled and diced potatoes (we used canned potatoes)",
+	        "1/4 cup all purpose flour",
+	        "Velveeta processed cheese, cubed (12 oz)",
+	        "1 1/2 cups skim milk",
+	        "3/4 teaspoon salt",
+	        "1/2 teaspoon pepper",
+	        "1/4 cup light sour cream"
+	    ]
+	},
+    {
+    	"id": 3,
+    	"category": "Appetizer",
+    	"name": "Tex-Mex Meat and Cheese Croquettes",
+    	"image": "meat-cheese-croquettes.jpg",
+    	"summary": "Ah, croquettes. Another culinary gift from the French to the rest of the world. Commonly, croquettes are filled with mashed potatoes or minced meat then dipped in eggs and bread crumbs and deep-fried to golden perfection. They're crunchy on the outside and soft on the inside. You know, kind of like those big beetles they eat in parts of Asia. {{shuddering}} I've eaten variations of croquettes in several countries but my favorite are the potato croquettes sold in the food courts at department stores in Japan and Korea. I've always wondered why croquettes are not popular in the U.S. I mean Americans seem to live on fried foods. After all, can you name any fair foods that aren't fried – as sickening as that may be? How many fast food restaurants can you name that do not have at least one item that's deep-fried? This is a country that deep fries Twinkies, Oreos, and pickles. This is a country that takes deep frying to a whole new level when it deep fries butter. Yes…butter. Yes, here in America, we deep-fry our fat.",
+    	"directions": "Whisk the milk, flour, and taco seasoning together in a small bowl. Set aside. Heat a skillet over medium heat with the oil. When hot, add the onion and cook 2 minutes. Add the garlic and cook 1 minute longer. Add the hamburger and a little salt and pepper. Brown and drain very well. Add the meat to a food processor and whiz for a few seconds. Scrape down the bowl and repeat until the meat is finely ground.\n\nReturn the meat to the skillet and turn the heat to medium. Add the scallions. Stir the flour mixture one more time and add it to the meat. Cook for 6 to 8 minutes, stirring every minute or so. The mixture should be quite thick. Taste for seasoning and adjust as needed. Remove from the heat and allow the mixture to cool then place in the refrigerator for 1 hour.\n\nAdd the cheese to the meat mixture and stir to combine. Use a cookie scoop to get enough meat to form a small meatball. Bigger is NOT better here. If you get the meatballs too big, the interior will not get hot before the croquette browns. Roll the meatballs between your palms as you would went making meatballs to ensure the meatballs are round and the outside is smooth. Place the meatballs on wax paper.\n\nIn a small bowl, whisk the egg whites until foamy. Add the panko bread crumbs to a shallow dish or pie plate. Add a meatball to the egg whites and coat. Transfer to the bread crumbs and coat. Add a second layer of egg whites and bread crumbs – knocking off any excess. Set the croquette on a wax-paper lined sheet pan and repeat this process until you have used up all of the meat. Place the meatballs in the refrigerator for 20 minutes to allow the coating to set. This step is important so don't skip it.\n\nPreheat about 3\" of oil in a pot – making sure not to add oil more than halfway up the pot. Heat the oil to 340F (the croquettes fry too quickly at higher temperatures). Fry a few croquettes at a time until they are golden brown – making sure not to overcrowd the oil. Drain on paper towels. Sprinkle with salt and serve piping hot with your favorite dipping sauce.",
+    	"serves": 4,
+        "prep_time": 15,
+        "cook_time": 30,
+    	"ingredients": [
+    		"1/2 c milk",
+    		"3 1/2 TBSP flour",
+    		"1 packet taco seasoning (1 oz to 1.25 oz)",
+    		"1 TBSP oil",
+    		"1 large onion, finely chopped",
+    		"4 cloves garlic, minced",
+    		"1 lb hamburger",
+    		"Salt and pepper to taste (go easy on the salt if your taco seasoning contains salt)",
+    		"4 scallions, finely chopped",
+    		"Additional salt and pepper to taste",
+    		"1 c freshly grated cheese (pepper jack, monterrey jack, cheddar, etc)",
+    		"5 egg whites, beaten",
+    		"2 c panko bread crumbs",
+    		"Oil for frying"
+    	]
+    },
+	{
+		"id": "pizza",
+	    "category": "Dinner",
+	    "name": "Cauliflower Pizza Crust",
+	    "image": "http://thekeenancookbook.com/wp-content/uploads/2013/02/001-Cauliflower-pizza-crust-banner.jpg",
+	    "directions": "Rice your cauliflower. To rice cauliflower, cut a washed and dried cauliflower head into bite sized pieces. Then place the pieces in a food processor and process until the pieces are the size of rice grains. Microwave the riced cauliflower 7-8 minutes. Preheat the oven to 450 degrees. Generously spray a pizza pan (we used a cookie sheet) non-stick spray.You can also use parchment paper. In a medium bowl, combine the cauliflower, egg whites, mozzarella, oregano, and garlic. Press the mixture into the pan. Push down all the corners so it will stick to itself. It may not be a pretty circle, but that is okay! Sprinkle with some parmesan cheese if you want some more flavor. Bake at 450 degrees for 12-15 minutes. Checking it at about the 12 minute mark and then allow it too cook for remaining time if needed. This crust is not like a typical bread crust, it sometimes won’t stay together as well and will require a fork and a spoon. Remove the pan from the oven. Add your sauce, toppings and cheese. Place under a broiler for about 30-60 seconds, just until the cheese is melted. Watch it carefully so it does not burn. Enjoy hot!",
+    	"serves": 4,
+        "prep_time": 7,
+        "cook_time": 33,
+	    "ingredients": [
+	        "1 cup cooked, riced cauliflower",
+	        "2 egg whites",
+	        "1 cup mozzarella cheese",
+	        "1 teaspoon oregano",
+	        "1 teaspoon minced garlic",
+	        "¼ – ½ c. pizza sauce",
+	        "parmesan cheese, if desired",
+	        "pizza toppings"
+	    ]
+	}
+],
+	"next_page": "",
+	"next_update": "http://s3.amazonaws.com/masconsult-template-recipes/recipes.json"
+}
